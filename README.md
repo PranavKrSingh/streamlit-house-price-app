@@ -85,9 +85,6 @@ area,bedrooms,bathrooms,stories,parking,mainroad,guestroom,furnishingstatus
 > ✅ Columns like `sqft`, `square_feet`, `no_of_bedrooms`, etc. will be auto-renamed.
 > ✅ Additional or missing columns will be handled gracefully.
 
-📥 You can also [Download Sample CSV Here](https://github.com/PranavKrSingh/streamlit-house-price-app/blob/main/sample_input.csv)
-
-
 
 ## 🙋‍♂️ Author
 
