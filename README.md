@@ -1,96 +1,119 @@
-# 🏠 House Price Prediction Web App
 
-This project is a **Streamlit-based web application** that predicts house prices using a trained machine learning model. It allows users to input property details and instantly get a price prediction. The app also provides a simple visualization of model behavior.
+# 🏠 House Price Prediction App
 
----
+A powerful web app built using **Streamlit** that allows users to **predict house prices** using a trained machine learning model.  
+Supports both **manual input** and **CSV batch upload** with flexible column support and visual analytics.
 
-## 🚀 Live Demo
-
-🔗 [Click here to view the live app](https://app-house-price-app-t4aysamkxozovbat3xjva2.streamlit.app/)
-
----
-
-## 📦 Features
-
-- 📊 Predict house prices based on user input
-- 🧠 Trained linear regression model
-- 💾 Real-time prediction using saved model (`model.pkl`)
-- 📉 Simple data visualization for better interpretability
-- 🌐 Web deployment via Streamlit Cloud
+🔗 [Live App](https://app-house-price-app-t4aysamkxozovbat3xjva2.streamlit.app/)  
+🔗 [GitHub Repository](https://github.com/PranavKrSingh/streamlit-house-price-app)
 
 ---
 
-## 📁 Project Structure
+## ✨ Features
 
+✅ **User-Friendly Interface** using Streamlit  
+✅ **Single House Prediction** via sidebar inputs  
+✅ **Multiple Predictions** via CSV upload  
+✅ **Automatic Column Mapping** for CSV inputs  
+✅ **Model Evaluation Metrics** – R², MAE, RMSE  
+✅ **Interactive Visualizations** (Bar, Pie, Line graphs)  
+✅ **Downloadable Prediction Results**  
+✅ **Example CSV format** preview for reference  
+✅ Handles flexible values (e.g., any number of stories, parking spaces)  
+✅ Clean UI with optional input collapse after prediction  
+
+---
+
+## 📊 Technologies Used
+
+- Python
+- Streamlit
+- scikit-learn
+- pandas
+- joblib
+- plotly
+
+---
+
+## 🧠 Model Training
+
+The ML model is trained on structured housing data and stored as:
+- `model.pkl` → Trained model
+- `model_columns.pkl` → Expected input feature columns
+
+You can retrain the model by running:
+
+```bash
+python train_model.py
+````
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/PranavKrSingh/streamlit-house-price-app.git
+cd streamlit-house-price-app
 ```
 
-streamlit-house-price-app/
-├── app.py               # Streamlit app script
-├── train\_model.py       # Python script to train and save model
-├── model.pkl            # Trained machine learning model
-├── requirements.txt     # Project dependencies
-└── README.md            # Project documentation
+### 2. Install dependencies
 
-````
+```bash
+pip install -r requirements.txt
+```
 
----
+### 3. Run the app
 
-## ⚙️ Technologies Used
-
-- Python 3
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- Plotly (for visualization)
+```bash
+streamlit run app.py
+```
 
 ---
 
-## 🛠 How to Run Locally
+## 📁 CSV Format for Batch Prediction
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/PranavKrSingh/streamlit-house-price-app.git
-   cd streamlit-house-price-app
-````
+Use any CSV with some or all of the following columns:
 
-2. Install dependencies:
+```csv
+area,bedrooms,bathrooms,stories,parking,mainroad,guestroom,furnishingstatus
+1200,3,2,2,1,Yes,Yes,Furnished
+800,2,1,1,0,No,No,Unfurnished
+```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+> ✅ Columns like `sqft`, `square_feet`, `no_of_bedrooms`, etc. will be auto-renamed.
+> ✅ Additional or missing columns will be handled gracefully.
 
-3. Train the model (optional if `model.pkl` already exists):
-
-   ```bash
-   python train_model.py
-   ```
-
-4. Run the Streamlit app:
-
-   ```bash
-   streamlit run app.py
-   ```
+📥 You can also [Download Sample CSV Here](https://github.com/PranavKrSingh/streamlit-house-price-app/blob/main/sample_input.csv)
 
 ---
 
-## 📌 Author
+## 📷 Screenshots
+
+### 🎯 Manual Prediction Input
+
+![Manual Input](screenshots/manual_input.png)
+
+### 📈 Graphical Results
+
+![Graphs](screenshots/graphs.png)
+
+### 📁 CSV Upload + Download
+
+![CSV Upload](screenshots/csv_upload.png)
+
+
+
+## 🙋‍♂️ Author
 
 **Pranav Kumar Singh**
-Data Science Intern – Celebal Technologies
-[GitHub Profile](https://github.com/PranavKrSingh)
+🔗 [GitHub](https://github.com/PranavKrSingh)
+📫 Feel free to connect!
 
 ---
 
 ## 📃 License
 
-This project is for educational and internship use.
+This project is open source and available under the [MIT License](LICENSE).
 
----
-
-## 🙌 Acknowledgements
-
-Special thanks to:
-
-* [Celebal Technologies](https://www.celebaltech.com/) for the internship opportunity.
-* Mentors and trainers for their valuable guidance.
