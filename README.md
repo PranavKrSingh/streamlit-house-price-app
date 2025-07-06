@@ -87,22 +87,6 @@ area,bedrooms,bathrooms,stories,parking,mainroad,guestroom,furnishingstatus
 
 📥 You can also [Download Sample CSV Here](https://github.com/PranavKrSingh/streamlit-house-price-app/blob/main/sample_input.csv)
 
----
-
-## 📷 Screenshots
-
-### 🎯 Manual Prediction Input
-
-![Manual Input](screenshots/manual_input.png)
-
-### 📈 Graphical Results
-
-![Graphs](screenshots/graphs.png)
-
-### 📁 CSV Upload + Download
-
-![CSV Upload](screenshots/csv_upload.png)
-
 
 
 ## 🙋‍♂️ Author
@@ -111,9 +95,5 @@ area,bedrooms,bathrooms,stories,parking,mainroad,guestroom,furnishingstatus
 🔗 [GitHub](https://github.com/PranavKrSingh)
 📫 Feel free to connect!
 
----
 
-## 📃 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
